@@ -1,0 +1,104 @@
+---
+title: Confirm your signup
+bodyClass: bg-gray-200 h-full
+htmlClass: bg-gray-200 h-full
+name: Kerem Gümüş
+---
+<extends src="src/layouts/main.html">
+    <block name="template">
+        <table class="w-full h-full font-sans">
+            <tr>
+                <td align="center" class=" pb-12">
+                    <table class="bg-white w-600 sm:w-full">
+                        <tr>
+                            <td class="text-center pb-24 md:pb-12">
+                                <h1 class="font-semibold text-black text-2xl">Siparişiniz Alındı</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" class="sm:px-6 px-24">
+                                <table class="w-3/4 sm:w-full border-2 ">
+                                    <tr>
+                                        <td class=" px-24 sm:px-0 text-center rounded">
+                                            <p class="text-lg font-semibold m-0">Merhaba @{{name}},</p>
+                                            <p class="text-gray-700 text-base">Siparişiniz başarıyla oluşturuldu.</p>
+                                            <div class="leading-24 sm:h-32">&zwnj;</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-16 ">
+                                            <table class="w-full border-solid border-0 border-r border-l border-t border-gray-300 rounded-t">
+                                                <tr class="">
+                                                    <td
+                                                        class="w-3/4 border-solid border-gray-300 text-left text-gray-700 text-sm border-0 pl-4 ">
+                                                        Ürün</td>
+                                                    <td
+                                                        class=" border-solid border-gray-300 text-center text-gray-700 text-sm border-0  border-l ">
+                                                        Adet</td>
+                                                    <td
+                                                        class=" border-solid border-gray-300 text-center text-gray-700 text-sm border-0  border-l ">
+                                                        Fiyat</td>
+                                                </tr>@{{page.productListHTML}}
+                                                
+                                                
+                                            </table>
+
+                                        </td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td class="px-16 mx-auto w-full">
+                                            <table class="w-full  border-solid border-0 border-b border-r border-t border-gray-500 rounded-b border-l mx-auto">
+                                                <tr>
+                                                    <td class="w-3/4 mx-auto text-gray-800 text-sm text-center pl-2">
+                                                        <p>Toplam Fiyat</p>
+                                                    </td>
+                                                    <td class="w-1/4 border-l text-gray-800 text-sm border-solid  border-gray-500 border-0 text-center">
+                                                        <p>349₺</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-8 mx-auto w-full">
+                                            <table class="w-full mt-12 p-8 bg-gray-200 border-solid border-0 border-b border-white mx-auto">
+                                                <tr>
+                                                    <td class="w-full mx-auto mb-16 text-gray-800 text-sm text-left px-12">
+                                                        <p class=" border-solid border-0 border-b font-semibold pb-4"> Telimat Bilgileri</p>
+                                                    </td>
+                                                    
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-full mx-auto mt-8 bg-white text-gray-800 text-sm font-semibold border-solid border-0 border-b border-gray-200 text-left px-12 ">
+                                                        <p> Ad-Soyad: <span class="font-normal"> @{{name}} </span> </p>
+                                                    </td>
+                                                </tr>
+                                               
+                                                <tr>
+                                                    <td class="w-full mx-auto mt-8 bg-white text-gray-800 text-sm font-semibold border-solid border-0 border-b border-gray-200 text-left px-12 ">
+                                                        <p> Telefon: <span class="font-normal">@{{phoneNumber}}</span> </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="w-full mx-auto mt-8 bg-white text-gray-800 text-sm font-semibold border-solid border-0 border-b border-gray-200 text-left px-12 ">
+                                                        <p> Adres: <span class="font-normal">@{{address}}</span> </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+    </block>
+</extends>
